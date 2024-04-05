@@ -9,17 +9,21 @@
   <body>
     <div class="container">
       <div class="calc">
-        <object></object>
         <h1>Calculadora</h1>
         <input id="num1" type="number" />
         <input id="num2" type="number" />
-        <button id="ouput" onclick="calcsum()">+</button>
-        <button>-</button>
-        <button>/</button>
-        <button>*</button>
-        <input type="text" readonly />
+
+        <div>
+          <button onclick="calc('+')">+</button>
+          <button onclick="calc('-')">-</button>
+          <button onclick="calc('/')">/</button>
+          <button onclick="calc('*')">*</button>
+        </div>
+
+        <input id="ouput" type="text" readonly />
       </div>
       <div class="history"></div>
+
     </div>
     <script src="javascript.js"></script>
   </body>
